@@ -52,11 +52,23 @@ namespace Part1
             Console.WriteLine("Generating SHA1 hashes took {0} seconds.", stopwatch.ElapsedMilliseconds / 1000.0);
             stopwatch.Restart();
 
-            Argon2Hasher argon2Hasher = new Argon2Hasher();
+            /*Argon2Hasher argon2Hasher = new Argon2Hasher();
             argon2Hasher.SaveHashesForPasswords(passwords);
 
             stopwatch.Stop();
-            Console.WriteLine("Generating Argon2i hashes took {0} seconds.", stopwatch.ElapsedMilliseconds / 1000.0);
+            Console.WriteLine("Generating Argon2i hashes took {0} seconds.", stopwatch.ElapsedMilliseconds / 1000.0);*/
+
+            /*BCryptHasher bcryptHasher = new BCryptHasher();
+            bcryptHasher.SaveHashesForPasswords(passwords);
+
+            stopwatch.Stop();
+            Console.WriteLine("Generating BCrypt hashes took {0} seconds.", stopwatch.ElapsedMilliseconds / 1000.0);*/
+
+            Blake3Hasher blake3Hasher = new Blake3Hasher();
+            blake3Hasher.SaveHashesForPasswords(passwords);
+
+            stopwatch.Stop();
+            Console.WriteLine("Generating Blake3 hashes took {0} seconds.", stopwatch.ElapsedMilliseconds / 1000.0);
         }
     }
 }

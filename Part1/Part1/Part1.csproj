@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
+    <PackageReference Include="Blake3Core" Version="0.1.0" />
     <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.2.1" />
   </ItemGroup>
 
