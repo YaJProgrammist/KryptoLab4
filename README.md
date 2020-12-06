@@ -19,4 +19,5 @@ Generated passwords are written to Out.txt (not present in this repository becau
 <b>Passwords hashing:</b><br>
 In the final version MD5, SHA1 + salt and Blake3 were used. Also Argon2i and BCrypt were tried but it was taking too much time for them to generate hashes (what a surprise))).<br>
 Realizations of these algorithms were taken from some .NET packages.<br>
-Results of hashing were saved to corresponding .csv files (even some resuls for Argon2i and BCrypt are there). 
+Results of hashing were saved to corresponding .csv files (even some resuls for Argon2i and BCrypt are there).<br>
+![programWorkScreen.png](https://github.com/YaJProgrammist/KryptoLab4/blob/main/Screenshots/programWorkScreen.png?raw=true)
