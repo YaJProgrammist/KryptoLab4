@@ -13,5 +13,10 @@ Top 1M - 89%<br>
 Random - 5%<br>
 "Human-like" - 1%<br>
 <br>
-After user enters count of passwords to generate, for every needed password random number from 1..100 is generated. It defines the type of password to generate.<br> Then random password is chosen from list of paswords of given type.<br>
+After user enters count of passwords to generate, for every needed password random number from 1..100 is generated. It defines the type of password to generate. Then random password is chosen from list of paswords of given type.<br>
 Generated passwords are written to Out.txt (not present in this repository because of whole idea of this task).<br>
+<br>
+<b>Passwords hashing:</b><br>
+In the final version MD5, SHA1 + salt and Blake3 were used. Also Argon2i and BCrypt were tried but it was taking too much time for them to generate hashes (what a surprise))).<br>
+Realizations of these algorithms were taken from some .NET packages.<br>
+Results of hashing were saved to corresponding .csv files (even some resuls for Argon2i and BCrypt are there). 
