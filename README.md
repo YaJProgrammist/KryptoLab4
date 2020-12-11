@@ -4,7 +4,7 @@
 Lists of 100 and 1M most popular passwords were found using Google:<br>
 100 - https://www.ianoffers.com/top-100-passwords-of-2018/<br>
 1M - https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt<br>
-Random passwords were generated using random.org passwords generator (https://www.random.org/passwords/).<br>
+Random passwords are generated from 0..9, a..z and A..Z (each password length = 8).<br>
 "Human-like" passwords were written manually.<br>
 <br>
 Percentage of generated passwords:<br>
