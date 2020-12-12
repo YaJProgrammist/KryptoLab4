@@ -7,7 +7,6 @@ namespace Part1
     {
         private const string TOP_100_PATH = "../../../Top100.csv";
         private const string TOP_1M_PATH = "../../../1M_passwords.txt";
-        private const string HUMAN_LIKE_PASSWORDS_PATH = "../../../Human-LikePasswords.txt";
 
         private Random rand = new Random();
 
@@ -16,7 +15,7 @@ namespace Part1
                 new PasswordsChank(new PasswordFileGenerator(TOP_100_PATH), 5),
                 new PasswordsChank(new PasswordFileGenerator(TOP_1M_PATH), 89),
                 new PasswordsChank(new PasswordRandomGenerator(), 5),
-                new PasswordsChank(new PasswordFileGenerator(HUMAN_LIKE_PASSWORDS_PATH), 1)
+                new PasswordsChank(new PasswordHumanLikeGenerator(), 1)
             };
         public List<string> PaswordList { get; private set; }
 

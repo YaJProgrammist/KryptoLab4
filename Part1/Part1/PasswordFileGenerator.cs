@@ -8,7 +8,7 @@ namespace Part1
     {
         private Random rand;
 
-        public List<string> PaswordList { get; private set; }
+        public List<string> PasswordList { get; private set; }
 
         public PasswordFileGenerator(string fileName)
         {
@@ -17,12 +17,12 @@ namespace Part1
         }
         public override string GetRandomPassword()
         {
-            return PaswordList[rand.Next(PaswordList.Count)];
+            return PasswordList[rand.Next(PasswordList.Count)];
         }
 
         private void FillPasswordsList(string fileName)
         {
-            PaswordList = new List<string>();
+            PasswordList = new List<string>();
             StreamReader sr = new StreamReader(fileName);
 
             while (!sr.EndOfStream)
@@ -30,7 +30,7 @@ namespace Part1
                 string password = sr.ReadLine();
                 if (password.Length > 0)
                 {
-                    PaswordList.Add(password);
+                    PasswordList.Add(password);
                 }
             }
 
